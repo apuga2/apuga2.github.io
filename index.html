@@ -267,6 +267,8 @@ Error message and password prompt
 
 <li>$:/config/NewJournal/Text</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all</li>
@@ -282,6 +284,8 @@ Error message and password prompt
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki</li>
 
@@ -601,6 +605,8 @@ Error message and password prompt
 
 <li>$:/state/tab--2112689675</li>
 
+<li>$:/state/tab--298970369</li>
+
 <li>$:/state/tab--86143343</li>
 
 <li>$:/state/tab-1410043539</li>
@@ -721,6 +727,8 @@ Error message and password prompt
 
 <li>$:/UploadWithUrlOnly</li>
 
+<li>$:/view</li>
+
 <li>$:/ViewTemplate/Description</li>
 
 <li>$:/ViewTemplate/Sources</li>
@@ -768,7 +776,7 @@ Error message and password prompt
 {"created":"20221004115738184","creator":"Telumire","text":".tc-titlebar.tc-edit-texteditor.tc-alt-link{\nfont-size:.75em!important;\nline-height:.75em!important;\n}","tags":"$:/AltLinkTemplate $:/tags/Stylesheet","title":"$:/AltLinkTemplate/Style","modified":"20221004120647330","modifier":"Telumire"},
 {"title":"$:/build","commit":"6cd2fc029d90d812d98226bbe7ca5d05b9954e15","text":"Built from branch 'tiddlywiki-com' at commit 6cd2fc029d90d812d98226bbe7ca5d05b9954e15 of https://github.com/Jermolene/TiddlyWiki5 at 2022-12-13 16:57:47 UTC\n"},
 {"created":"20190212051316149","creator":"Telumire","text":"\\import [all[shadows+tiddlers]tag[$:/tags/Commander/Macro]]\n{{$:/plugins/kookma/commander/search/ui}}\n\u003C!-- Create the search filter based on searchbox and selective operation (if active) -->\n\u003C$vars searchTerms={{{ [\u003CsearchboxTid>get[text]minlength{$:/plugins/kookma/commander/config/minlength}]~[[$:/errorCode:-23500]] }}}  pattern=\"^\\[\">\u003C!-- this part checks the combo search and selective ops-->\n\u003C$set name=\"filtertext\"   filter=\"[\u003CsearchTerms>regexp\u003Cpattern>]\" value=\"[subfilter\u003CsearchTerms>]\" emptyValue=\"[!is[system]search\u003CsearchTerms>]\">\n\u003C$set name=\"searchfilter\" filter=\"[\u003CselectiveOpsTid>get[text]match[yes]]\"  \n\tvalue=\"[subfilter\u003Cfiltertext>!prefix[$:/temp/commander]]+[tag\u003CworkingTag>]\" emptyValue=\"[subfilter\u003Cfiltertext>!prefix[$:/temp/commander]]\" >\n\u003Csmall style=\"margin-left:17ch;\">\u003Ci>\u003C$count filter=\"[subfilter\u003Cfiltertext>!prefix[$:/temp/commander]!is[missing]]\" /> matches \u003C/i>\u003C/small>\n\n\u003C!-- Display search results and let selective operation -->\n\u003C\u003Ccommander-slider title:\"$:/plugins/kookma/commander/search/selection\" default:\"open\">>\n\n\u003C!-- Display operation UIs-->\n\u003C\u003Ctabs \"[all[shadows+tiddlers]tag[$:/tags/Commander]!has[draft.of]]\" default:\"$:/plugins/kookma/commander/tiddler/ui\">>\n\n\u003C/$set>\n\u003C/$set>\n\u003C$vars>\n\n---\n\n\u003C\u003Ccommander-slider title:\"$:/plugins/kookma/commander/log/ui\">>\n","title":"$:/Commander","icon":"$:/plugins/kookma/commander/images/file-alt","modified":"20221117200637726","type":"text/vnd.tiddlywiki","modifier":"Telumire","tags":"$:/tags/SideBar","caption":"Commander"},
-{"created":"20230402130142867","creator":"AP","text":"no","title":"$:/config/AutoSave","modified":"20230402131207504","modifier":"AP"},
+{"created":"20230402130142867","creator":"AP","text":"no","title":"$:/config/AutoSave","modified":"20230402131639697","modifier":"AP"},
 {"created":"20221121202205838","creator":"Telumire","tags":"","type":"text/vnd.tiddlywiki","text":"[is[tiddler]]","title":"$:/config/breakzplatform/github-comments/filter","modified":"20221121202216433","modifier":"Telumire"},
 {"created":"20221121202128264","creator":"Telumire","tags":"","type":"text/vnd.tiddlywiki","text":"Hide GitHub comments","title":"$:/config/breakzplatform/github-comments/label-hide","modified":"20221121202128264","modifier":"Telumire"},
 {"created":"20221121202127051","creator":"Telumire","tags":"","type":"text/vnd.tiddlywiki","text":"Show GitHub comments","title":"$:/config/breakzplatform/github-comments/label-show","modified":"20221121202127051","modifier":"Telumire"},
@@ -786,20 +794,22 @@ Error message and password prompt
 {"created":"20221104160258361","creator":"Telumire","title":"$:/config/Navigation/UpdateAddressBar","text":"permaview","modified":"20221104160258361","modifier":"Telumire"},
 {"created":"20221104160310363","creator":"Telumire","title":"$:/config/Navigation/UpdateHistory","text":"yes","modified":"20221104160310363","modifier":"Telumire"},
 {"created":"20230106054710351","creator":"Telumire","text":"{{typety type type}}","tags":"","title":"$:/config/NewJournal/Text","modified":"20230402124546649","modifier":"AP"},
+{"created":"20230402131522571","creator":"AP","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all","modified":"20230402131522571","modifier":"AP"},
 {"created":"20221104125035607","creator":"Telumire","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel","modified":"20221104125035607","modifier":"Telumire"},
-{"created":"20230402043731794","creator":"Puga","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all","modified":"20230402043732882","modifier":"Puga"},
+{"created":"20230402043731794","creator":"Puga","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/fold-all","modified":"20230402131527339","modifier":"AP"},
 {"created":"20221104102316448","creator":"Telumire","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home","modified":"20230402054012367","modifier":"Puga"},
 {"created":"20230402130242187","creator":"AP","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/language","modified":"20230402130244082","modifier":"AP"},
 {"created":"20230402043720097","creator":"Puga","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager","modified":"20230402043720097","modifier":"Puga"},
-{"created":"20221104125028072","creator":"Telumire","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions","modified":"20221104125028072","modifier":"Telumire"},
-{"created":"20230402043726932","creator":"Puga","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal","modified":"20230402043726932","modifier":"Puga"},
-{"created":"20221104125037969","creator":"Telumire","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler","modified":"20230402043725997","modifier":"Puga"},
+{"created":"20221104125028072","creator":"Telumire","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions","modified":"20230402131518398","modifier":"AP"},
+{"created":"20230402043726932","creator":"Puga","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal","modified":"20230402131550429","modifier":"AP"},
+{"created":"20221104125037969","creator":"Telumire","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler","modified":"20230402131547697","modifier":"AP"},
+{"created":"20230402131535160","creator":"AP","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview","modified":"20230402131535735","modifier":"AP"},
 {"created":"20221104125041626","creator":"Telumire","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki","modified":"20221104160205032","modifier":"Telumire"},
-{"created":"20230402043711828","creator":"Puga","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview","modified":"20230402043715961","modifier":"Puga"},
+{"created":"20230402043711828","creator":"Puga","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview","modified":"20230402131511963","modifier":"AP"},
 {"created":"20221120182119385","creator":"Telumire","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/Feed/Settings/SendFeed","modified":"20221206103509729","modifier":"Telumire"},
-{"created":"20221120182121679","creator":"Telumire","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/libro/FileUpload/DropDown/Button","modified":"20221120182403963","modifier":"Telumire"},
+{"created":"20221120182121679","creator":"Telumire","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/libro/FileUpload/DropDown/Button","modified":"20230402131625788","modifier":"AP"},
 {"created":"20221107150550779","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/plugins/kookma/commander/buttons/pagecontrol","modified":"20221107150550779"},
-{"created":"20221120182117431","creator":"Telumire","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/SaveToGitHub/Button","modified":"20221120182117431","modifier":"Telumire"},
+{"created":"20221120182117431","creator":"Telumire","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/SaveToGitHub/Button","modified":"20230402131616751","modifier":"AP"},
 {"created":"20221120182123365","creator":"Telumire","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/SaveToGitHub/FileUpload/SendImages","modified":"20221120182123365","modifier":"Telumire"},
 {"created":"20221104103035905","creator":"Telumire","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/themes/nico/notebook/ui/Buttons/SwitchPalette","modified":"20221104103035905","modifier":"Telumire"},
 {"created":"20221107150611871","creator":"Telumire","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/TiddlyTweaks/ui/Buttons/ThemeSwitcher","modified":"20221117155342275","modifier":"Telumire"},
@@ -943,16 +953,17 @@ Error message and password prompt
 {"created":"20230402051656098","creator":"Puga","title":"$:/state/Excise/-1608860585/type","text":"link","modified":"20230402051656098","modifier":"Puga"},
 {"created":"20230402111906387","creator":"Puga","title":"$:/state/folded/My Theory of Psychoanalysis","text":"hide","modified":"20230402111906387","modifier":"Puga"},
 {"created":"20230402052711316","creator":"Puga","title":"$:/state/folded/New Beginning","text":"hide","modified":"20230402052711316","modifier":"Puga"},
-{"created":"20221221183928695","creator":"Telumire","title":"$:/state/notebook-sidebar","text":"no","modified":"20230402130914927","modifier":"AP"},
-{"created":"20221221184452690","creator":"Telumire","title":"$:/state/notebook-sidebar-section","text":"$:/core/ui/SideBar/Tools","modified":"20230402124448218","modifier":"Puga"},
+{"created":"20221221183928695","creator":"Telumire","title":"$:/state/notebook-sidebar","text":"yes","modified":"20230402131413788","modifier":"AP"},
+{"created":"20221221184452690","creator":"Telumire","title":"$:/state/notebook-sidebar-section","text":"$:/core/ui/SideBar/Tools","modified":"20230402131428431","modifier":"AP"},
 {"created":"20221221184225009","creator":"Telumire","title":"$:/state/plugin-info-1108689160-$:/plugins/cdr/external-js---960882608","text":"contents","modified":"20221221184830155","modifier":"Telumire"},
 {"created":"20221230221434427","creator":"Telumire","title":"$:/state/plugin-info-208292166-$:/plugins/EvidentlyCube/AutoComplete--1467470539","text":"readme","modified":"20221230221436139","modifier":"Telumire"},
 {"created":"20221221204142061","creator":"Telumire","title":"$:/state/showeditpreview","text":"no","modified":"20230304034104119","modifier":"Telumire"},
 {"created":"20230304210144142","creator":"Telumire","title":"$:/state/sidebar","text":"no","modified":"20230402042615757","modifier":"Telumire"},
-{"created":"20221229043445922","creator":"Telumire","title":"$:/state/tab--118165028","text":"$:/plugins/kookma/commander/field/ui","modified":"20221229043445922","modifier":"Telumire"},
+{"created":"20221229043445922","creator":"Telumire","title":"$:/state/tab--118165028","text":"$:/plugins/kookma/commander/setting/ui","modified":"20230402131422087","modifier":"AP"},
 {"created":"20221221185212100","creator":"Telumire","title":"$:/state/tab--1498284803","text":"$:/core/ui/AdvancedSearch/Standard","modified":"20230402124504652","modifier":"Puga"},
 {"created":"20221229031437134","creator":"Telumire","title":"$:/state/tab--1963855381","text":"$:/core/ui/ControlPanel/Palette","modified":"20230402130033567","modifier":"AP"},
 {"created":"20230402124619733","creator":"AP","title":"$:/state/tab--2112689675","text":"$:/core/ui/ControlPanel/Advanced","modified":"20230402124619733","modifier":"AP"},
+{"created":"20230402131424721","creator":"AP","title":"$:/state/tab--298970369","text":"$:/plugins/kookma/commander/setting/uicomp/delete-all-temp-tiddlers","modified":"20230402131424721","modifier":"AP"},
 {"created":"20221229021142143","creator":"Telumire","title":"$:/state/tab--86143343","text":"$:/core/ui/ControlPanel/Plugins/Installed/Plugins","modified":"20221229021315643","modifier":"Telumire"},
 {"created":"20230304211740250","creator":"Telumire","title":"$:/state/tab-1410043539","text":"$:/plugins/kookma/commander/tag/uicomp/replace-tags","modified":"20230304211740250","modifier":"Telumire"},
 {"created":"20221221183933813","creator":"Telumire","title":"$:/state/tab-1749438307","text":"$:/core/ui/ControlPanel/Saving","modified":"20230402130249847","modifier":"AP"},
@@ -967,7 +978,7 @@ Error message and password prompt
 {"created":"20221229031438777","creator":"Telumire","title":"$:/state/tabs/controlpanel/toolbars-1345989671","text":"$:/core/ui/ControlPanel/Toolbars/EditToolbar","modified":"20230402125716114","modifier":"AP"},
 {"title":"$:/status/RequireReloadDueToPluginChange","text":"no"},
 {"created":"20230402043401161","creator":"Telumire","text":"AP","title":"$:/status/UserName","modified":"20230402124517142","modifier":"A"},
-{"title":"$:/StoryList","text":"","list":"Welcome!"},
+{"title":"$:/StoryList","created":"20230402131444799","creator":"AP","text":"","list":"Welcome!","modified":"20230402131444799","modifier":"AP"},
 {"created":"20220830145238557","creator":"Telumire","text":"/* Hide subtitle */\n\n.tc-subtitle{\ndisplay:none;\n}\n\n/* List */\n\nol li{\npadding-block: 0.5em;\n}\n\n/*\nTiddler title icon\n*/\n\n.tc-tiddler-title-icon {\n\tdisplay: inline-grid;\n}\n\n/*\nFloat\n*/\n\n.tc-tiddler-controls.float-right{\nfloat:right;\n}\n\n.tc-tiddler-controls.float-left{\nfloat:left;\n}\n\n/*\nTweaks Notebook theme\n*/\n\n.nc-topbar-wrapper .left{\n    display: flex;\n    gap: 0.5ch;\n\t\tposition:relative;\n}\n\n.nc-topbar-wrapper .left .tc-page-controls{\n  display: inline-grid;\n  place-content: center;\n}\n\n.nc-topbar-wrapper .left .tc-block-dropdown-wrapper {\n\t\tposition:absolute;\n\t\tleft:30px;\n\t\ttop:35px;\n}","tags":"$:/tags/Stylesheet","title":"$:/Style","modified":"20221104144237791","modifier":"Telumire"},
 {"created":"20221222095011372","creator":"Telumire","title":"$:/tags/EditTemplate","list":"$:/core/ui/EditTemplate/controls $:/core/ui/EditTemplate/title $:/AltLinkTemplate/EditTemplate $:/core/ui/EditTemplate/tags $:/core/ui/EditTemplate/shadow $:/core/ui/ViewTemplate/classic [[New wiki EditTemplate]] $:/core/ui/EditTemplate/body $:/EditTemplate/Sources $:/EditTemplate/Description $:/core/ui/EditTemplate/type $:/core/ui/EditTemplate/fields","modified":"20221222095011372","modifier":"Telumire"},
 {"created":"20221117200835546","creator":"Telumire","title":"$:/tags/Image","search":"","modified":"20221229035456447","modifier":"Telumire"},
@@ -1013,6 +1024,7 @@ Error message and password prompt
 {"created":"20230402125635295","creator":"AP","title":"$:/UploadName","text":"AP951","modified":"20230402125636024","modifier":"AP"},
 {"text":"","title":"$:/UploadURL"},
 {"text":"yes","title":"$:/UploadWithUrlOnly"},
+{"created":"20230402131454287","creator":"AP","title":"$:/view","text":"classic","modified":"20230402131502912","modifier":"AP"},
 {"created":"20221026204239992","creator":"Telumire","text":"\u003C$list filter=\"[{!!title}has[description]]\">\n    \u003C$reveal tag=\"span\" type=\"nomatch\" stateTitle=\u003C\u003Cfolded-state>> text=\"hide\" retain=\"yes\" animate=\"yes\">\n    \u003C\u003Cdetails\n    summary:\"Description\"\n    content:\"\"\"{{!!description}}\"\"\"\n    >>\n    \u003C/$reveal>\n\u003C/$list>","tags":"$:/tags/ViewTemplate Tools Description","title":"$:/ViewTemplate/Description","modified":"20221027195423394","modifier":"Telumire","list-after":"","install":"\u003C\u003Cexport filter:\"[[Description]tagging[]] [search:title[$:/TiddlyTweaks/Details]]\" filename:\"description-template\" hint:\"Click this button to download a json file containing all relevant tiddlers, or drag and drop to install directly into your tiddlywiki : \">>","caption":"Description","description":"Add a description text editor for tiddler with the field \"description\".\n\u003Cp>Require \u003C\u003Clist-links \"[[Description]tagging[]] [search:title[$:/TiddlyTweaks/Details]]\">>\u003C/p>"},
 {"created":"20220915014059885","creator":"Telumire","text":"\u003C$list filter=\"[{!!title}has[sources]]\">\n    \u003C$reveal tag=\"div\" type=\"nomatch\" stateTitle=\u003C\u003Cfolded-state>> text=\"hide\" retain=\"yes\" animate=\"yes\" class=\"vt-sources\">\n    \u003C\u003Cdetails\n    summary:\"\"\"Source\u003C$list filter=\"[list[!!sources]nth[2]]\">s\u003C/$list>\"\"\"\n    content:\"\"\"\u003Cul>\n                \u003C$list filter=\"[{!!sources}enlist-input[]format:titlelist[]]+[unique[]]\" variable=\"source\">\n                \u003Cli>\n                    \u003Ccite>\n                        \u003C\u003Csource>>\n                    \u003C/cite>\n                \u003C/li>\n                \u003C/$list>\n            \u003C/ul>\"\"\">>\n    \u003C/$reveal>\n\u003C/$list>","tags":"$:/tags/ViewTemplate Tools Sources","title":"$:/ViewTemplate/Sources","modified":"20221102110644002","modifier":"Telumire","list-after":"","install":"\u003C\u003Cexport filter:\"[[Sources]tagging[]] [search:title[$:/TiddlyTweaks/Details]]\" filename:\"sources-template\" hint:\"Click this button to download a json file containing all relevant tiddlers, or drag and drop to install directly into your tiddlywiki : \">>","caption":"Sources","sources":"","description":"Add a sources text editor for tiddler with the field \"sources\".\n\u003Cp>Require \u003C\u003Clist-links \"[[Sources]tagging[]] [search:title[$:/TiddlyTweaks/Details]]\">>\u003C/p>"},
 {"created":"20220915150523719","creator":"Telumire","text":".vt-sources{\nborder-top:solid 1px lightgrey;\npadding-top:2px;\n}","tags":"$:/tags/Stylesheet Sources","title":"$:/ViewTemplate/Sources/Style","modified":"20221104104722124","modifier":"Telumire"},
